@@ -1,0 +1,146 @@
+.wrap{
+  background: #fff4f0;
+  padding-top: 0.2rem;
+  height:100vh;
+}
+.wrap-mask{
+  background: #fff4f0;
+  box-sizing: border-box;
+  padding-top: 0.2rem;
+  height:100vh;
+  //overflow: hidden;
+}
+.goods-ifo{
+  width:95%;
+  margin:0 auto ;
+  border: 0.05rem solid #ffbbaa;
+  border-radius: 0.1rem;
+  background: white;
+  .top {
+    height: 8rem;
+    text-align: center;
+    border-bottom: 0.02rem dashed #ffbbaa;
+    img {
+      width: 6.8rem;
+      height: 8rem;
+    }
+  }
+}
+.bottom{
+  padding: 0.2rem;
+  background: #eeeeee;
+  div{
+    font-size: 0.56rem;
+    font-weight: bold;
+    color:red;
+  }
+  h2{
+    font-size: 0.48rem;
+    line-height: 0.8rem;
+  }
+  p{
+    font-size: 0.36rem;
+    line-height: 0.4rem;
+    height:0.8rem;
+    color: #b0b0b0;
+  }
+}
+
+.buy {
+  position: fixed;
+  bottom: 0;
+  letf: 0;
+  display: flex;
+  width: 100%;
+  div {
+    flex: 1;
+    line-height: 1.2rem;
+    color: white;
+    text-align: center;
+  }
+  .car {
+    background: #ffa59e;
+  }
+  .buy-now {
+    background: red;
+  }
+}
+
+.buy-ifo{
+  position: fixed;
+  left:0;
+  width:100%;
+  height:6.5rem;
+  padding-top: 0.4rem;
+  background: white;
+  z-index:10;
+  header{
+    display: flex;
+    width:100%;
+    img{
+      width:3rem;
+      height:3rem;
+      img{
+        width:2.4rem;
+        height:3rem;
+      }
+    }
+    .right{
+      position: relative;
+      flex: 1;
+      >div{
+        position: absolute;
+        bottom:0;
+        p{
+          font-size: 0.36rem;
+          line-height: 0.4rem;
+          color: #cecece;
+        }
+        .price{
+          font-size: 0.44rem;
+          line-height: 0.5rem;
+          color:red;
+        }
+      }
+    }
+  }
+  >div{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 0.4rem;
+    margin-bottom: 2rem;
+    >div{
+      display: flex;
+      button{
+        width:0.48rem;
+        height:0.48rem;
+        line-height: 0.48rem;
+        font-size: 0.32rem;
+        padding: 0;
+        border: none;
+      }
+      input{
+        line-height: 0.38rem;
+        width:0.8rem;
+        height:0.38rem;
+        border: 0.01rem solid darkgrey;
+      }
+    }
+  }
+  >button{
+    background: #ff9b9b;
+    color:white;
+    border: none;
+  }
+}
+
+.mask{
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 5;
+  width:100%;
+  height:100vh;
+  background: rgba(0,0,0,0.6);
+}

@@ -47,4 +47,8 @@ export default {
   -webkit-transition: width 2s;
   -o-transition: width 2s;
 }
+
+  body,#app{
+    height:100%;
+  }
 </style>
